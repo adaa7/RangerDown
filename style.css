@@ -1,0 +1,1216 @@
+/* 初始化 */
+*{
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+li {
+    float: left;
+}
+input {
+    border: 0;
+}
+body {
+    min-width: 1200px;
+    max-width: 100%;
+    background: rgb(238, 241, 245);
+}
+.guangao {
+    width: 21px;
+    height: 13px;
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    background: url(./img/galig213icon.png) no-repeat center;
+}
+/* 头部导航栏 */
+.header {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    background-color: #11171e;
+    flex-direction: row;
+}
+.header .header-context {
+    width: 1200px;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+/* header-top  导航栏*/
+.header .header-top {
+    display: flex;
+    justify-content: space-between;
+}
+.header .header-top div:first-child {
+    padding-left: 20px;
+    background: url(//www.ali213.net/images/home_dark.png) 5px 17px no-repeat;
+}
+.header-top ul li {
+    float: left;
+    width: 61px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 51px;
+    border-right: #19202a 1px solid;
+    text-align: center;
+    overflow: hidden;
+}
+.header-top ul li:nth-child(3) {
+    border-top: #f85800 2px solid;
+    line-height: 46px;
+}
+.header-top li a {
+    color: #737e91;
+}
+.header-top li a:hover {
+    color: #FA6815;
+}
+.header-top div:last-child{
+    padding-left: 114px;
+}
+.header-top div:last-child div {
+    float: left;
+}
+.header-top div:last-child div:first-child {
+    width: 55px;
+    height: 48px;
+}
+.header-top div:last-child em {
+    line-height: 51px;
+    text-align: right;
+    font-size: 14px;
+    float: left;
+    display: block;
+    color: #737e91;
+    font-style: normal;
+}
+.header-top div:last-child span {
+    width: 7px;
+    height: 5px;
+    background-image: url(./img/news_show_ui.png);
+    background-position: -308px -74px;
+    float: left;
+    margin-left: 3px;
+    margin-top: 24px;
+}
+.header-top div:last-child .header-app {
+    width: 100px;
+    line-height: 48px;
+    padding-left: 0;
+    text-align: center;
+    background: url(./img/app_dark.png) 1px center no-repeat;
+    border-right: 1px solid #1e222d;
+}
+.header-top .header-app a {
+    padding-left: 10px;
+    color: #737e91;
+}
+.header-top .header-app a:hover {
+    color: #FA6815;
+}
+/* 登录栏 */
+.header-loge #loge-img {
+    width: 14px;
+    height: 14px;
+    margin: 17px 5px;
+    background: url(./img/All.png) no-repeat -29px -366px;
+    float: left;
+}
+.header-loge div {
+    display: flex;
+}
+.header-loge div span {
+    color: #748090;
+    font-size: 14px;
+    margin: 13px 2px;
+}
+.header-loge div a {
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    margin: 9.5px 2px;
+    color: #748090;
+    font-size: 14px;
+    cursor: pointer;
+}
+.header-loge div a:hover {
+    color: #FA6815;
+}
+
+/* 中心导航栏 */
+.header-center {
+    width: 100%;
+    height: 96px;
+    background: #1e222d;
+}
+.header-center .header-center-content {
+    width: 1200px;
+    height: 73px;
+
+    margin: 0 auto;
+    padding-top: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-center .header-center-content .header-content-logo{
+    width: 200px;
+    height: 60px;
+}
+.header-center .header-content-logo a {
+    width: 200px;
+    height: 50px;
+    background: url(./img/icon_20181025.png) no-repeat;
+    background-position: -82px 0;
+    margin-top: 10px;
+    display: block;
+}
+.header-center .header-content-advertisement {
+    height: 60px;
+    position: relative;
+}
+.header-center .header-content-search .header-search-top{
+    width: 311px;
+    height: 35px;
+    background-image: url(./img/icon_20181025.png);
+    background-position: -1px -100px;
+    margin-top: 4px;
+}
+.header-center .header-content-search input[type="text"] {
+    width: 221px;
+    height: 30px;
+    line-height: 27px;
+    float: left;
+    margin: 3px 0 1px 10px;
+    display: inline;
+    color: #37404c;
+    background: transparent;
+    outline: none;
+}
+.header-center .header-content-search input[type="submit"] {
+    height: 30px;
+    line-height: 27px;
+    float: left;
+    margin: 3px 0 1px 9px;
+    color: #737e91;
+    background: transparent;
+}
+.header-center .header-serch-text {
+    margin: 2px 0 0px 7px;
+}
+.header-center .header-serch-text a {
+    padding-right: 10px;
+    color: #737e91;
+    font-size: 12px;
+}
+.header-center .header-serch-text a:hover {
+    color: #FA6815;
+}
+/* 下导航栏 */
+.header-button{
+    width: 100%;
+    height: 44px;
+    background: #222a35;
+}
+.header-button ul {
+    display:block;
+    width: 1200px;
+    height: 44px;
+    margin: 0 auto;
+}
+.header-button ul li{
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+}
+.header-button ul li:first-child {
+    border-top: #f85802 4px solid;
+}
+.header-button li a {
+    color: #b1bcce;
+    
+}
+.header-button li a:hover {
+    color: #FA6815;
+}
+
+/* 内容部分 */
+/* 游戏推荐 */
+.GameRecommendation {
+    width: 1200px;
+    height: 120px;
+    margin: 10px auto 0;
+    background: #fff;
+    padding: 10px 0;
+    position: relative;
+}
+.GameRecommendation .GameRecommendation-box {
+    width: 1160px;
+    height: 30px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.GameRecommendation .GameRecommendation-box .GameRecommendation-tite {
+    width: 71px;
+    height: 22px;
+    font-size: 12px;
+    line-height: 22px;
+    background: url(./img/icon_20181025.png) no-repeat;
+    background-position: -71px -51px;
+    text-indent: 10px;
+    color: #ff524f;
+    margin-top: 4px;
+    display: inline;
+    float: left;
+}
+.GameRecommendation ul {
+    width: 1080px;
+    height: 22px;
+    float: right;
+}
+.GameRecommendation ul li {
+    margin-top: 4px;
+    width: 78px;
+    /* padding-left: 13px; */
+    height: 25px;
+    /* border-right: 1px solid #666; */
+    /* border-width: 1px; */
+} 
+.GameRecommendation ul .partition {
+    width: 13px;
+    height: 25px;
+    color: #666;
+}
+.GameRecommendation li a {
+    font-size: 12px;
+    color: #434343;
+}
+.GameRecommendation li a:hover {
+    color: #FA6815;
+}
+
+/* 广告 */
+.centerBox-advertisement {
+    width: 1200px;
+    height: 113.333px;
+    margin: 10px auto 0;
+}
+.centerBox-advertisement-centext {
+    margin-left: 10px;
+    float: right;
+}
+.centerBox-advertisement-centext a img {
+    width: 140px;
+    height: 90px;
+}
+.centerBox-advertisement-centext div {
+    width: 140px;
+    margin: 0 auto;
+}
+.centerBox-advertisement-centext div a{
+    display: block;
+    
+    padding-left: 30px;
+    color: #565656;
+    font-size: 10px;
+}
+
+/* 搜索 */
+.search {
+    padding-top: 20px;
+    width: 1200px;
+    height: 60px;
+    background-color: #fff;
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+.search .serch-box-context {
+    width: 580px;
+    height: 40px;
+    float: left;
+    padding-left: 20px;
+    position: relative;
+}
+.search .serch-box-context input[type="text"] {
+    width: 470px;
+    float: left;
+    border: 2px solid #f85802;
+    height: 36px;
+    padding-left: 10px;
+    color: #999;
+    font-size: 14px;
+    outline: none;
+}
+
+.search .serch-box-context input[type="submit"] {
+    width: 96px;
+    height: 40px;
+    float: left;
+    background-color: #f85802;
+    line-height: 40px;
+    border-radius: 0 4px 4px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    vertical-align: bottom;
+    cursor: pointer;
+    text-indent: 18px;
+    
+}
+.search .serch-box-context span {
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 70px;
+    width: 17px;
+    height: 17px;
+    background: url(./img/ss.png) no-repeat;
+    pointer-events: none;
+}
+.search .search-text {
+    float: right;
+    height: 20px;
+    margin-top: 10px;
+    overflow: hidden;
+    width: 580px;
+    /* margin-left: 10px; */
+}
+.search .search-text a {
+    margin-right: 12px;
+    font-size: 14px;
+    color: #999;
+}
+.search .search-text a:hover {
+    color: #f85802;
+}
+
+/*  图片推荐游戏  */
+.PictureRecommend {
+    width: 1190px;
+    height: 391px;
+    margin: 10px auto;
+}
+.PictureRecommend a{
+    position: relative;
+}
+.PictureRecommend .PictureRecommend-left {
+    float: left;
+}
+.PictureRecommend .PictureRecommend-left img{
+    width: 190px;
+    height: 190px;
+    margin-bottom: 5px;
+}
+.PictureRecommend .PictureRecommend-left a:nth-child(2) {
+    display: block;
+}
+.PictureRecommend .PictureRecommend-left span{
+    width: 100%;
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    height: 40px;
+    line-height: 50px;
+    text-indent: 12px;
+    font-size: 16px;
+    color: white;
+    background: rgba(0,0,0,0.6);
+}
+
+.PictureRecommend .PictureRecommend-centre {
+    float: left;
+    width: 390px;
+    height: 390px;
+    margin-left: 10px;
+}
+.PictureRecommend .PictureRecommend-centre div{
+    width: 100%;
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    height: 79px;
+    line-height: 50px;
+    text-indent: 12px;
+    font-size: 16px;
+    color: white;
+    background: rgba(0,0,0,0.6);
+}
+.PictureRecommend-centre div span {
+    font-size: 20px;
+    height: 34px;
+    display: block;
+    color: white;
+    width: 100%;
+}
+
+.PictureRecommend-centre div i {
+    display: block;
+    font-size: 14px;
+    color: #aaa;
+    height: 24px;
+    line-height: 24px;
+    font-style: normal;
+}
+.PictureRecommend .PictureRecommend-right a{
+    float: left;
+    margin: 0 0 5px 10px;
+}
+.PictureRecommend .PictureRecommend-right span {
+    width: 100%;
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    height: 50px;
+    line-height: 50px;
+    text-indent: 12px;
+    font-size: 16px;
+    color: white;
+    background: rgba(0,0,0,0.6);
+}
+/* 合集 */
+.collection {
+    margin: 10px auto;
+    width: 1200px;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+.collection .GameCollection {
+    width: 279px;
+    height: 595px;
+    border-radius: 4px;
+    padding: 5px 20px 0;
+    background-color: #fff;
+}
+.collection .GameCollection .GameCollection-top {
+    width: 279px;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+}
+.collection .GameCollection-top span{
+    display: block;
+    float: left;
+    color: #f85802;
+    height: 39px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 2px solid #FA6815;
+}
+.collection .GameCollection-top a{
+    display: block;
+    float: right;
+    color: #666;
+    height: 39px;
+    font-size: 13px;
+}
+.collection a img {
+    width: 279px;
+    height: 126px;
+    padding: 7px 0 0px 0;
+
+}
+.collection .atestupdate {
+    width: 410px;
+    height: 595px;
+    border-radius: 4px;
+    padding: 5px 20px 0;
+    background-color: #fff;
+}
+.collection .atestupdate .atestupdate-top {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+}
+.collection .atestupdate-top span {
+    display: block;
+    margin-right: 10px;
+    float: left;
+    color: #f85802;
+    height: 39px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 2px solid #FA6815;
+}
+.collection .atestupdate-top span:nth-of-type(2) {
+    color: #000;
+    border-bottom: 0;
+} 
+.collection .atestupdate-top a{
+    display: block;
+    float: right;
+    color: #666;
+    height: 39px;
+    font-size: 13px;
+}
+.collection .atestupdate-middle-top {
+    width: 100%;
+    height: 128px;
+    margin-top: 18px;
+    text-align: center;
+}
+.atestupdate-middle-top h2 a{
+    font-size: 16px;
+    color: #f85802;
+    font-weight: bold;
+}
+.atestupdate-middle-top h2 a{
+    font-size: 16px;
+    color: #f85802;
+    font-weight: bold;
+}
+.atestupdate-middle-top>div {
+    margin-top: 5px;
+}
+.atestupdate-middle-top>div a {
+    color: #000000;
+    font-size: 14px;
+}
+.collection .atestupdate .atestupdate-bottom {
+    width: 100%;
+    height: 390px;
+}
+.collection .atestupdate-bottom a{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 14px;
+    display: block;
+}
+.atestupdate-bottom a span {
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #666;
+}
+.atestupdate-bottom a label {
+    float: left;
+    width: 5px;
+    height: 5px;
+    background-color: #f85802;
+    border-radius: 3px;
+    margin: 8px 5px 0 0;
+}
+.atestupdate-bottom a i {
+    float: right;
+    width: 40px;
+    font-size: 14px;
+    color: #ccc;
+}
+.atestupdate-bottom>.atestupdate-bottom-mvp {
+    background: #f4f5f4;
+    /* line-height: 34px; */
+    margin-bottom: 0px;
+    height: 30px;
+}
+
+.collection .Downloadchart {
+    width: 370px;
+    height: 595px;
+    border-radius: 4px;
+    padding: 5px  20px 0 20px;
+    background-color: #fff;
+}
+.collection .Downloadchart .Downloadchart-top {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+}
+.collection .Downloadchart-top span{
+    display: block;
+    float: left;
+    color: #f85802;
+    height: 39px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 2px solid #FA6815;
+}
+.collection .Downloadchart-top a{
+    display: block;
+    float: right;
+    color: #666;
+    height: 39px;
+    font-size: 13px;
+}
+.collection .Downloadchart-middle li {
+    overflow: hidden;
+    width: 100%;
+    height: 61px;
+    margin-bottom: 10px;
+}
+.Downloadchart-middle li span {
+    float: left;
+    width: 19px;
+    height: 61px;
+    background-color: #f85802;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 61px;
+}
+.Downloadchart-middle {
+    margin-top: 20px;
+}
+.Downloadchart-middle li img {
+    float: left;
+    height: 61px;
+    border-radius: 5px;
+    margin: 0 13px 0 4px;
+}
+.Downloadchart-middle li div {
+    float: left;
+    width: 180px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #999;
+}
+.Downloadchart-middle div a {
+    font-size: 18px;
+    color: #434343;
+    height: 25px;
+    margin-bottom: 3px;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+.Downloadchart-middle li>a {
+    display: block;
+    margin-top: 36px;
+    color: #666;
+    float: right;
+    width: 49px;
+    height: 23px;
+    border-radius: 4px;
+    border: solid 1px #ccc;
+    line-height: 23px;
+    text-align: center;
+    font-size: 12px;
+}
+.Downloadchart-bottom li {
+    height: 25px;
+    width: 100%;
+    line-height: 25px;
+    margin-top: 19px;
+}
+
+
+.Downloadchart-bottom li span {
+    float: left;
+    font-size: 14px;
+    color: #ccc;
+    margin-right: 5px;
+    text-align: center;
+    width: 19px;
+}
+.Downloadchart-bottom li a {
+    float: left;
+    width: 134.22px;
+
+    overflow: hidden;
+    height: 25px;
+    font-size: 14px;
+    color: #666;
+}
+.Downloadchart-bottom li p {
+    float: left;
+    font-size: 12px;
+    color: #999;
+    width: 110px;
+    overflow: hidden;
+    text-align: right;
+    height: 25px;
+}
+.Downloadchart-bottom li .Downloadchart-bottom-download {
+    text-decoration: none;
+    display: block;
+    color: #434343;
+    float: right;
+    width: 49px;
+    height: 23px;
+    border-radius: 4px;
+    border: solid 1px #ccc;
+    line-height: 23px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.masterpiece {
+    width: 100%;
+    height: 561px;
+    margin-top: 10px;
+}
+.masterpiece-content {
+    width: 1200px;
+    margin: 0 auto;
+}
+.masterpiece-content .masterpiece-content-left {
+    width: 830px;
+    height: 561px;
+    padding: 0 20px;
+    float: left;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.masterpiece-content .masterpiece-content-left .masterpiece-left-top {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+}
+.masterpiece-content .masterpiece-left-top span{
+    display: block;
+    float: left;
+    color: #f85802;
+    height: 39px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 2px solid #FA6815;
+}
+.masterpiece-content .masterpiece-left-top a{
+    display: block;
+    float: right;
+    color: #666;
+    height: 39px;
+    font-size: 13px;
+}
+.masterpiece-content .masterpiece-left-button {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap:wrap;
+}
+.masterpiece-content .masterpiece-left-button .masterpiece-left-works {
+    width: 166px;
+    height: 251px;
+    position: relative;
+}
+
+.masterpiece-left-button .masterpiece-left-works p{
+    width: 145px;
+    height: 194px;
+    border-radius: 8px;
+    vertical-align: bottom;
+    overflow: hidden;
+    position: relative;
+}
+.masterpiece-left-button .masterpiece-left-works p i {
+    position: absolute;
+    top: 5px;
+    left: -3px;
+    height: 19px;
+    background-color: #f85802;
+    padding: 0 5px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 19px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.masterpiece-left-button .masterpiece-left-works img {
+    width: 100%;
+    height: 100%;
+}
+.masterpiece-left-button .masterpiece-left-works div {
+    font-size: 14px;
+    width: 145px;
+    height: 24px;
+    line-height: 24px;
+    margin-top: 8px;
+    color: #666;
+    overflow: hidden;
+    text-align: center;
+}
+.masterpiece-left-button .masterpiece-left-works #works {
+    position: absolute;
+    bottom: 60px;
+    height: 41px;
+    background: linear-gradient(to top,black,transparent);
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 0 0 8px 8px;
+}
+.masterpiece-left-button .masterpiece-left-works a:hover div{
+    color: #FA6815;
+}
+
+.masterpiece-content-right {
+    width: 279px;
+    height: 549.667px;
+    float: right;
+    padding: 0 20px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.masterpiece-right-top {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+}
+.masterpiece-right-top span{
+    display: block;
+    float: left;
+    color: #f85802;
+    height: 39px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 2px solid #FA6815;
+}
+.masterpiece-right-top a{
+    display: block;
+    float: right;
+    color: #666;
+    height: 39px;
+    font-size: 13px;
+}
+.masterpiece-content-right ul {
+    margin-top: 10px;
+}
+.masterpiece-content-right ul li {
+    position: relative;
+    width: 262px;
+    padding-left: 8px;
+    border-left: 1px solid #d8d8d8;
+    padding-bottom: 12px;
+    
+}
+.masterpiece-content-right ul li:last-child {
+    padding-bottom: 0px;
+    
+}
+.masterpiece-content-right ul li::after { 
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #f85802;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: -3px;
+    top: 10px;
+}
+.masterpiece-content-right li div {
+    width: 63px;
+    height: 26px;
+    border-radius: 5px;
+    line-height: 26px;
+    text-align: center;
+    font-size: 14px;
+    color: #f85802;
+    margin-bottom: 6px;
+    background: url(./img/jx.png) no-repeat;
+}
+.masterpiece-content-right li a {
+    display: block;
+    width: 260px;
+    height: 26px;
+    text-align: left;
+    text-indent: 10px;
+    line-height: 26px;
+    background-color: #f9f9f9;
+    color: #434343;
+    font-size: 14px;
+    overflow: hidden;
+}
+.masterpiece-content-right li a:hover {
+    color: #f85802;
+}
+
+.HotGame {
+    width: 100%;
+    height: 561px;
+    margin-top: 10px;
+}
+.HotGame .HotGame-content {
+    width: 1200px;
+    margin: 0 auto;
+} 
+.HotGame .HotGame-content .HotGame-content-left {
+    width: 830px;
+    height: 561px;
+    padding: 0 20px;
+    float: left;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.HotGame-content .HotGame-content-left .HotGame-left-top {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+}
+.HotGame-content-left .HotGame-left-top span {
+    display: block;
+    float: left;
+    color: #f85802;
+    height: 39px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 2px solid #FA6815;
+}
+.HotGame-content-left .HotGame-left-top div {
+    float: right;
+    font-size: 0;
+    height: 26px;
+}
+.HotGame-content-left .HotGame-left-top a {
+    padding: 2px 13px;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    color: #666;
+    margin-left: 5px;
+    border-radius: 3px;
+}
+.HotGame-content-left .HotGame-left-top a:first-child {
+    background: #f85802;
+    border-color: #f85802;
+    color:white;
+}
+ 
+.HotGame-content-left .HotGame-left-top a:hover {
+    color: white; 
+    background-color: #FA6815;
+    border: solid 1px #FA6815;
+}
+
+.HotGame-content-left .HotGame-left-button {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap:wrap;
+}
+.HotGame-content-left .HotGame-left-button .HotGame-left-works {
+    width: 166px;
+    height: 251px;
+    position: relative;
+}
+
+.HotGame-content-left .HotGame-left-button .HotGame-left-works p{
+    width: 145px;
+    height: 194px;
+    border-radius: 8px;
+    vertical-align: bottom;
+    overflow: hidden;
+    position: relative;
+}
+ .HotGame-left-button .HotGame-left-works p i {
+    position: absolute;
+    top: 5px;
+    left: -3px;
+    height: 19px;
+    background-color: #f85802;
+    padding: 0 5px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 19px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.HotGame-left-button .HotGame-left-works img {
+    width: 100%;
+    height: 100%;
+}
+.HotGame-left-button .HotGame-left-works div {
+    font-size: 14px;
+    width: 145px;
+    height: 24px;
+    line-height: 24px;
+    margin-top: 8px;
+    color: #666;
+    overflow: hidden;
+    text-align: center;
+}
+.HotGame-left-button .HotGame-left-works #works {
+    position: absolute;
+    bottom: 58px;
+    height: 41px;
+    background: linear-gradient(to top,black,transparent);
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 0 0 8px 8px;
+}
+.HotGame-left-button .HotGame-left-works a:hover div{
+    color: #FA6815;
+}
+
+.HotGame-content-right {
+    width: 279px;
+    height: 549.667px;
+    float: right;
+    padding: 0 20px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.HotGame-content-right .HotGame-right-top {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    
+    border-bottom: 1px solid #ccc;
+}
+.HotGame-content-right .HotGame-right-top span{
+    display: block;
+    float: left;
+    color: #f85802;
+    height: 39px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 2px solid #FA6815;
+}
+
+.HotGame-right-middle {
+    position: relative;
+    margin: 11px 0 35px;
+} 
+.HotGame-right-middle input[type="text"] {
+    width: 164px;
+    border: 2px solid #f85802;
+    height: 36px;
+    line-height: 40px;
+    padding: 0 12px;
+    font-size: 14px;
+    color: #999;
+    background-color: #fff;
+    border-radius: 4px 0 0 4px;
+    float: left;
+    outline: none;
+}
+.HotGame-right-middle span {
+    display: block;
+    position: absolute;
+    top: 11px;
+    right: 63px;
+    width: 17px;
+    height: 17px;
+    background: url(./img/ss.png) no-repeat;
+    pointer-events: none;
+}
+.HotGame-right-middle input[type="submit"] {
+    width: 85px;
+    height: 40px;
+    float: left;
+    background-color: #f85802;
+    line-height: 40px;
+    border-radius: 0 4px 4px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    text-indent: 18px;
+}
+.HotGame-right-middle a {
+    font-size: 14px;
+    color: #999;
+    display: inline-block;
+    margin-right: 3px;
+    margin-top: 8px;
+}
+.HotGame-right-middle a:hover {
+   color: #FA6815; 
+}
+
+.HotGame-content-right-button-content {
+    width: 293px;
+    height: 323px;
+    overflow: hidden;
+    padding-top: 10px;
+    padding: 20px 0 8px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.HotGame-content-right-button-content a{
+    width: 85px;
+    height: 28px;
+    border-radius: 4px;
+    border: solid 1px #ccc;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    overflow: hidden;
+    color: #666;
+    float: left;
+    margin: 0 10px 11px 0;
+}
+.HotGame-content-right-button-content a:hover {
+    color: white; 
+    background-color: #FA6815;
+    border: solid 1px #FA6815;
+}
+
+.Classicgame-content-right {
+    width: 279px;
+    height: 549.667px;
+    float: right;
+    padding: 0 20px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.Classicgame-content-right .Classicgame-right-top {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    
+    border-bottom: 1px solid #ccc;
+}
+.Classicgame-content-right .Classicgame-right-top span{
+    display: block;
+    float: left;
+    color: #f85802;
+    height: 39px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 2px solid #FA6815;
+}
+.Classicgame-right-top a{
+    display: block;
+    float: right;
+    color: #666;
+    height: 39px;
+    font-size: 13px;
+}
+.Classicgame-right-button {
+    margin-top: 20px;
+}
+.Classicgame-right-button a {
+    display: block;
+    height: 159px;
+    margin-bottom: 2px;
+    font-size: 0;
+}
+.Classicgame-right-button a img {
+    width: 100%;
+    height: 126px;
+    overflow: hidden;
+}
+.Classicgame-right-button a div {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+.Classicgame-right-button a:hover div{
+    color: #FA6815;
+}
