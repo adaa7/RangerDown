@@ -89,7 +89,7 @@ body {
 .header-top div:last-child em {
     line-height: 51px;
     text-align: right;
-    font-size: 14px;
+    font-size: 13px;
     float: left;
     display: block;
     color: #737e91;
@@ -101,7 +101,7 @@ body {
     background-image: url(./img/news_show_ui.png);
     background-position: -308px -74px;
     float: left;
-    margin-left: 3px;
+    margin-left: 10px;
     margin-top: 24px;
 }
 .header-top div:last-child .header-app {
@@ -114,6 +114,7 @@ body {
 }
 .header-top .header-app a {
     padding-left: 10px;
+    font-size: 14px;
     color: #737e91;
 }
 .header-top .header-app a:hover {
@@ -590,6 +591,10 @@ body {
     line-height: 20px;
     margin-bottom: 14px;
     display: block;
+}
+.collection .atestupdate-bottom a:hover span {
+    color: #FA6815;
+    border-bottom: 1px solid #FA6815;
 }
 .atestupdate-bottom a span {
     float: left;
@@ -1213,4 +1218,505 @@ body {
 }
 .Classicgame-right-button a:hover div{
     color: #FA6815;
+}
+
+
+
+
+.Indiegame {
+    width: 100%;
+    height: 330px;
+    margin-top: 10px;
+}
+.Indiegame .Indiegame-content {
+    width: 1200px;
+    margin: 0 auto;
+} 
+.Indiegame .Indiegame-content .Indiegame-content-left {
+    width: 830px;
+    height: 310px;
+    padding: 0 20px;
+    float: left;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.Indiegame-content .Indiegame-content-left .Indiegame-left-top {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+}
+.Indiegame-content-left .Indiegame-left-top span {
+    display: block;
+    float: left;
+    color: #f85802;
+    height: 39px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 2px solid #FA6815;
+}
+.Indiegame-content-left .Indiegame-left-top div {
+    float: right;
+    font-size: 0;
+    height: 26px;
+}
+.Indiegame-content-left .Indiegame-left-top a {
+    padding: 2px 13px;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    color: #666;
+    margin-left: 5px;
+    border-radius: 3px;
+}
+.Indiegame-content-left .Indiegame-left-top a:first-child {
+    background: #f85802;
+    border-color: #f85802;
+    color:white;
+}
+ 
+.Indiegame-content-left .Indiegame-left-top a:hover {
+    color: white; 
+    background-color: #FA6815;
+    border: solid 1px #FA6815;
+}
+
+.Indiegame-content-left .Indiegame-left-button {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap:wrap;
+}
+.Indiegame-content-left .Indiegame-left-button .Indiegame-left-works {
+    width: 166px;
+    height: 251px;
+    position: relative;
+}
+
+.Indiegame-content-left .Indiegame-left-button .Indiegame-left-works p{
+    width: 145px;
+    height: 194px;
+    border-radius: 8px;
+    vertical-align: bottom;
+    overflow: hidden;
+    position: relative;
+}
+ .Indiegame-left-button .Indiegame-left-works p i {
+    position: absolute;
+    top: 5px;
+    left: -3px;
+    height: 19px;
+    background-color: #f85802;
+    padding: 0 5px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 19px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.Indiegame-left-button .Indiegame-left-works img {
+    width: 100%;
+    height: 100%;
+}
+.Indiegame-left-button .Indiegame-left-works div {
+    font-size: 14px;
+    width: 145px;
+    height: 24px;
+    line-height: 24px;
+    margin-top: 8px;
+    color: #666;
+    overflow: hidden;
+    text-align: center;
+}
+.Indiegame-left-button .Indiegame-left-works #works {
+    position: absolute;
+    bottom: 58px;
+    height: 41px;
+    background: linear-gradient(to top,black,transparent);
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 0 0 8px 8px;
+}
+.Indiegame-left-button .Indiegame-left-works a:hover div{
+    color: #FA6815;
+}
+
+.Indiegame-content-right {
+    width: 279px;
+    height: 310px;
+    float: right;
+    padding: 0 20px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.Indiegame-content-right .Indiegame-right-top {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    
+    border-bottom: 1px solid #ccc;
+}
+.Indiegame-content-right .Indiegame-right-top span{
+    display: block;
+    float: left;
+    color: #f85802;
+    height: 39px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 2px solid #FA6815;
+}
+
+.Indiegame-content-right .Indiegame-right-button {
+    margin-top: 15px;
+}
+.Indiegame-content-right .Indiegame-right-button a {
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
+    height: 20px;
+}
+.Indiegame-content-right .Indiegame-right-button i {
+    width: 20px;
+    font-size: 13px;
+    height: 20px;
+    border-radius: 4px;
+    float: left;
+    font-style: normal;
+    color: #ccc;
+    text-align: center;
+    line-height: 20px;
+}
+.Indiegame-content-right .Indiegame-right-button  #Indiegame1 {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    float: left;
+    font-style: normal;
+    background-color: #f85802;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    font-size: 13px;
+}
+.Indiegame-content-right .Indiegame-right-button span {
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    text-align: left;
+    font-size: 14px;
+    color: #666;
+    margin-left: 8px;
+    overflow: hidden;
+}
+
+
+/* Box */
+.Box {
+    width: 100%;
+    height: 336px;
+}
+.Box .Box-content {
+    margin: 0 auto;
+    width: 1200px;
+    height: auto;
+    overflow: hidden;
+}
+.Box .Box-content .Box-content-left {
+    width: 830px;
+    height: 305px;
+    float: left;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 0 20px 20px;
+    overflow: hidden;
+
+}
+.Box-content .Box-content-left .Box-left-top {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+}
+.Box-content .Box-content-left .Box-left-top span{
+    display: block;
+    float: left;
+    color: #f85802;
+    height: 39px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 2px solid #FA6815;
+}
+.Box-content-left .Box-left-top a{
+    display: block;
+    float: right;
+    color: #666;
+    height: 39px;
+    font-size: 13px;
+}
+.Box-left-bottun {
+    float: left;
+    width: 259px;
+    margin-right: 17px;
+    overflow: hidden;
+    margin-top: 24px;  
+}
+.Box-left-bottun a {
+    width: 100%;
+    height: 152px;
+    overflow: hidden;
+    border-radius: 8px;
+    display: block;
+    position: relative;
+    margin-bottom: 10px;
+}
+.Box-left-bottun a span {
+    position: absolute;
+    width: 100%;
+    height: 37px;
+    background: rgba(0,0,0,0.5);
+    bottom: 0;
+    left: 0;
+    line-height: 37px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.Box-left-bottun>div a{
+    width: 100%;
+    margin-bottom: 0;
+    font-size: 14px;
+    display: block;
+    position: relative;
+    color: #6a6a6a;
+    height: 26px;
+    line-height: 26px;
+    text-indent: 10px;
+} 
+.Box-left-bottun>div a:hover {
+    color: #FA6815;
+
+}
+.Box-left-bottun>div a::before {
+    content: ".";
+    position: absolute;
+    top: -9px;
+    left: -9px;
+    font-size: 34px;
+    color: #c2c2c2;
+}
+.Box-content-right {
+    width: 279px;
+    height: 303px;
+    float: right;
+    padding: 0 20px 10px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.Box-right-top {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+}
+.Box-right-top span{
+    display: block;
+    float: left;
+    color: #f85802;
+    height: 39px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 2px solid #FA6815;
+}
+.Box-right-top a{
+    display: block;
+    float: right;
+    color: #666;
+    height: 39px;
+    font-size: 13px;
+}
+.Box-right-button ul {
+    padding-top: 10px;
+}
+.Box-right-button ul li {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid #e9e9e9;
+    margin-top: 5px;
+}
+.Box-right-button ul li:last-child {
+    border-bottom: 0px solid #e9e9e9;
+}
+.Box-right-button li i {
+    position: absolute;
+    width: 15px;
+    line-height: 15px;
+    letter-spacing: -1px;
+    color: white;
+    float: left;
+    text-align: center;
+    font-style: normal;
+    font-size: 12px;
+    background: #bebebe;
+}
+#Box-1 {
+    background: #fd4404;
+}
+#Box-2 {
+    background: #fd6936;
+}
+#Box-3 {
+    background: #fe8f68;
+}
+.Box-right-button li a {
+    display: block;
+    color: #333;
+    height: 14px;
+    width: 100%;
+    line-height: 14px;
+    text-indent: 20px;
+    font-size: 14px;
+    overflow: hidden;
+    margin-bottom: 6px;
+}
+.Box-right-button li a:hover {
+    color: #FA6815;
+}
+.Box-right-button li p {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    font-size: 12px;
+}
+
+.GoodGame {
+    height: 580px;
+    width: 1178px;
+    margin: 2px auto;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 0 12px 30px 15px;
+}
+.GoodGame .GoodGame-content {
+    width: 20%;
+    float: left;
+}
+.GoodGame-top {
+    width: 80%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+}
+.GoodGame-top span{
+    display: block;
+    float: left;
+    color: #f85802;
+    height: 38px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 3px solid #FA6815;
+}
+.GoodGame-top a{
+    display: block;
+    float: right;
+    color: #666;
+    height: 39px;
+    font-size: 13px;
+}
+.GoodGame-botton .queue {
+    position: relative;
+    height: 33px;
+    margin-top: 20px;
+}
+.GoodGame-botton .queue i {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    font-style: normal;
+    color: #fff;
+    text-align: center;
+    line-height: 32px;
+    margin-top: 2px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #d5d5d5;
+}
+.GoodGame-botton .queue #queue-1 {
+    background-image: linear-gradient(143deg,#ff5831 0,#ffa992 100%);
+}
+.GoodGame-botton .queue a {
+    font-size: 15px;
+    color: #505050;
+    position: absolute;
+    top: 0;
+    left: 41px;
+}
+.GoodGame-botton .queue p {
+    position: absolute;
+    top: 20px;
+    left: 41px;
+    font-size: 14px;
+    color: #b7b7b7;
+}
+
+
+.foot {
+    width: 100%;
+    height: 200px;
+    background: #1e222d;
+    color: #768b9c;
+    font-size: 12px;
+}
+.foot .foot-content {
+    height: auto;
+    width: 100%;
+    padding-top: 44px;
+}
+.foot .foot-content-1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.foot .foot-content-2 {
+    text-align: center;
+}
+.foot .foot-content-1 a {
+    color: #768b9c;
+}
+.foot .foot-content-1 a:hover {
+    color: #FA6815;
+}
+
+#Guangao {
+    position: fixed;
+    bottom: 20px;
+    right: 5px;
+    width: 250px;
+    height: 200px;
+
+}
+#Guangao div {
+    position: relative;
+}
+#Guangao div i {
+    font-size: 6px;
+    font-style: normal;
+    float: right;
+    color: rgb(163, 1, 1);
+}
+#Guangao img {
+    width: 100%;
+    height: 100%;
+}
+#Guangao span {
+    width: 21px;
+    height: 13px;
+    position: absolute;
+    right: 2px;
+    bottom: 4px;
+    background: url(./img/galig213icon.png) no-repeat center;
 }
